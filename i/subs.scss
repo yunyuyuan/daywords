@@ -1,0 +1,54 @@
+view.container{
+  flex-direction: column;
+  >.head{
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    >view{
+      font-size: 0.9rem;
+      margin-left: 1.5rem;
+      >text{
+        color: red;
+        font-weight: bold;
+        margin: 0 0.4rem;
+        font-size: 1.1em;
+      }
+    }
+    >button{
+      margin-right: 1rem;
+      font-size: 0.9rem;
+      border-radius: 0.3rem;
+      padding: 0.3rem 0;
+      background: #ff4c60;
+      color: white;
+      width: 6rem;
+    }
+  }
+  >.body{
+    width: 100%;
+    flex-direction: column;
+    >view{
+      width: 100%;
+      margin-top: 1rem;
+      >view{
+        flex-grow: 1;
+        background: white;
+        border-radius: 0.6rem;
+        margin: 0 0.3rem;
+        >image{
+          width: 3.6rem;
+          height: 3.6rem;
+          border-radius: 50%;
+          margin: 0 0.5rem;
+        }
+        >text{
+          margin: 0 auto;
+        }
+      }
+      checkbox{
+        width: 3rem;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="head">
+    <text>{{time}}</text>
+    <button bindtap="change_show">{{only_sub?'查看全部':'只看订阅'}}</button>
+  </view>
+  <view wx:if="{{words_lis.length>0}}" class="body">
+    <words-box wx:for="{{words_lis}}" wx:key="id" class="words {{item.color}}" content="{{item.title}}" p_num="{{item.prs_num}}" openid="{{item.openid}}" wordsid="{{item.id}}" color="{{item.color}}"></words-box>
+    <turn-page id="id-turn-page" bind:goturn="turn_page" num="{{num}}" show_count="{{show_count}}" now="{{now}}"></turn-page>
+  </view>
+  <empty wx:else></empty>
+</view>

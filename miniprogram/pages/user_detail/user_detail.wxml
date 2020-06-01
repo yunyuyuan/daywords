@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="head">
+    <image src="{{avatar}}" binderror="default_img"></image>
+    <view class="txt">
+      <text class="nm">{{nm}}</text>
+      <text class="sign">{{sign}}</text>
+    </view>
+    <view wx:if="{{uid!=openid}}" class="btn">
+      <button bindtap="tog_subblk" data-t="subs" class="sub {{has_sub==1?'has':''}}">订阅</button>
+      <button bindtap="tog_subblk" data-t="blks" class="blk {{has_blk==1?'has':''}}">拉黑</button>
+    </view>
+  </view>
+  <view class="body">
+    <view>
+      <view>
+        <image src="/images/words.png"></image>
+        <text>他的句子</text>
+      </view> 
+    </view>
+    <words-box wx:for="{{lis}}" wx:key="id" show_a="{{false}}" wordsid="{{item.id}}" content="{{item.title}}" prs_num="{{item.prs_num}}" color="{{item.color}}" time="{{item.crt_time}}"></words-box>
+  </view>
+  <turn-page id="id-turn-page" bind:goturn="turn-page" now="{{now}}" num="{{num}}" show_count="{{show_c}}"></turn-page>
+</view>

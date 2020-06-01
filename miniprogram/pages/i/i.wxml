@@ -1,0 +1,39 @@
+<view class="container">
+  <view class="i-info">
+    <image class="avt" src="{{avatar}}?r={{rand}}"></image>
+    <view>
+      <text class="nm">{{nm}}</text>
+      <text class="sign">{{sign}}</text>
+    </view>
+    <image bindtap="edit_info" class="mdf" src="/images/modify.png"></image>
+  </view>
+  <view class="operate">
+    <view class="btn" bindtap="nvgt" data-s="sub">
+      <image src="/images/fav.png"></image>
+      <text class="txt">订阅</text>
+      <text class="num">{{subs_num}}</text>
+    </view>
+    <view class="btn" bindtap="nvgt" data-s="block">
+      <image src="/images/blocklist.png"></image>
+      <text class="txt">拉黑</text>
+      <text class="num">{{blks_num}}</text>
+    </view>
+    <view class="btn" bindtap="nvgt" data-s="fav">
+      <image src="/images/fans.png"></image>
+      <text class="txt">粉丝</text>
+      <text class="num">{{flws_num}}</text>
+    </view>
+  </view>
+  <view class="my">
+    <view class="head">
+      <text>我的今日一句</text>
+      <view></view>
+    </view>
+    <view class="color">
+      <text bindtap="change_color" data-idx="{{index}}" class="{{index==chose_c_idx?'active':''}}" wx:for="{{color_lis}}" wx:key="{{index}}" style="background:{{item}}"></text>
+    </view>
+    <input bindinput="get_title" style="background: {{color_lis[chose_c_idx]}}" value="{{title}}" placeholder="句子[64字内]" maxlength="64"></input>
+    <textarea bindinput="get_desc" value="{{desc}}" placeholder="解释/出处[1024字内]" maxlength="1024"></textarea>
+    <button bindtap="submit">{{ has_up?'修改':'提交' }}</button>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="avt" bindtap="choose_img">
+    <text>头像</text>
+    <image id="avt-img" src="{{avatar}}"></image>
+  </view>
+  <view class="nm">
+    <text>昵称</text>
+    <input bindinput="input_nm" value="{{nm}}" placeholder="昵称(16字内)" maxlength="16"></input>
+  </view>
+  <view class="sign">
+    <text>签名</text>
+    <textarea bindinput="input_sign" value="{{sign}}" placeholder="签名(64字内)" maxlength="64"></textarea>
+  </view>
+  <button bindtap="submit">修改</button>
+</view>

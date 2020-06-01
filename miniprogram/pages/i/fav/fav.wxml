@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="head">
+    <view>共有<text>{{num}}</text>人订阅我</view>
+  </view>
+  <view class="body" wx:if="{{lis.length>0}}">
+    <view wx:for="{{lis}}" wx:key="openid">
+      <view bindtap="go_user" data-id="{{item.openid}}">
+        <image src="{{item.avatar}}" data-idx="{{index}}" binderror="default_img"></image>
+        <text>{{item.nm}}</text>
+      </view>
+    </view>
+  </view>
+  <turn-page wx:if="{{lis.length>0}}" id="id-turn-page" bind:goturn="turn_page" now="{{now}}" show_count="{{show_c}}" num="{{num}}"></turn-page>
+  <empty wx:else></empty>
+</view>

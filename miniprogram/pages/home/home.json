@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "words-box": "/components/words_box/words_box",
+    "turn-page": "/components/turn_page/turn_page",
+    "empty": "/components/empty/empty"
+  }
+}

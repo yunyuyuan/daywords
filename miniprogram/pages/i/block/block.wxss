@@ -1,0 +1,45 @@
+view.container {
+  flex-direction: column; }
+  view.container > .head {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: space-between; }
+    view.container > .head > view {
+      font-size: 0.9rem;
+      margin-left: 1.5rem; }
+      view.container > .head > view > text {
+        color: red;
+        font-weight: bold;
+        margin: 0 0.4rem;
+        font-size: 1.1em; }
+    view.container > .head > button {
+      margin-right: 1rem;
+      font-size: 0.9rem;
+      border-radius: 0.3rem;
+      padding: 0.3rem 0;
+      background: #ff4c60;
+      color: white;
+      width: 6rem; }
+  view.container > .body {
+    width: 100%;
+    flex-direction: column; }
+    view.container > .body > view {
+      width: 100%;
+      margin-top: 1rem; }
+      view.container > .body > view > view {
+        flex-grow: 1;
+        background: white;
+        border-radius: 0.6rem;
+        margin: 0 0.3rem; }
+        view.container > .body > view > view > image {
+          width: 3.6rem;
+          height: 3.6rem;
+          border-radius: 50%;
+          margin: 0 0.5rem; }
+        view.container > .body > view > view > text {
+          margin: 0 auto; }
+      view.container > .body > view checkbox {
+        width: 3rem;
+        text-align: center; }
+
+/*# sourceMappingURL=subs.css.map */

@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="head">
+    <view>共拉黑了<text>{{num}}</text>名用户</view>
+    <button bindtap="desub">取消拉黑</button>
+  </view>
+  <view class="body" wx:if="{{lis.length>0}}">
+    <view wx:for="{{lis}}" wx:key="openid">
+      <view bindtap="go_user" data-id="{{item.openid}}">
+        <image src="{{item.avatar}}" data-idx="{{index}}" binderror="default_img"></image>
+        <text>{{item.nm}}</text>
+      </view>
+      <checkbox-group bindchange="change_c" data-idx="{{index}}">
+            <checkbox></checkbox>
+      </checkbox-group>
+    </view>
+  </view>
+  <turn-page wx:if="{{lis.length>0}}" id="id-turn-page" bind:goturn="turn_page" now="{{now}}" show_count="{{show_c}}" num="{{num}}"></turn-page>
+  <empty wx:else></empty>
+</view>

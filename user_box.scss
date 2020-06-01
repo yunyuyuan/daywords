@@ -1,0 +1,27 @@
+.-user-box{
+  width: calc(100% - 1rem);
+  background: white;
+  border-radius: 0.5rem;
+  border: 1px solid #d7d7d7;
+  padding: 0.8rem 0.5rem;
+  >image{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+  >text{
+    margin: 0 auto 0 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  >view{
+    >image{
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+    >text{
+      font-size: 0.85rem;
+      margin-left: 0.6rem;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+empty{
+  width: 100%;
+  margin: 5rem 0;
+}
+.-empty{
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+.-empty > image{
+   height: 5rem
+}
+.-empty > text{
+  color: rgb(41, 41, 41);
+  font-size: 1.1rem;
+}

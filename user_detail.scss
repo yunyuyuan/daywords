@@ -1,0 +1,81 @@
+@import "public";
+view.container{
+  width: 100%;
+  flex-direction: column;
+  >.head{
+    width: 96%;
+    margin: 1rem 0 2rem 0;
+    background: white;
+    border-radius: 1rem;
+    padding: 0.6rem 0;
+    >image{
+      margin: 0 0.4rem;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    >.txt{
+      flex-direction: column;
+      margin: 0 auto;
+      >.nm{
+        margin-bottom: 0.4rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        @include text-over(1)
+      }
+      >.sign{
+        font-size: 0.75rem;
+        @include text-over(3);
+      }
+    }
+    >.btn{
+      flex-direction: column;
+      margin: 0 0.2rem;
+      >button{
+        border-radius: 0.15rem;
+        font-size: 0.8rem;
+        font-weight: normal;
+        width: 2.5rem;
+        padding: 0.15rem 0;
+        &.has{
+          background: #7a7a7a !important;
+        }
+        &.sub{
+          background: #6b74ff;
+          color: white;
+          margin-bottom: 0.5rem;
+        }
+        &.blk{
+          background: #ff4d4d;
+          color: white;
+        }
+      }
+    }
+  }
+  >.body{
+    flex-direction: column;
+    width: 100%;
+    >view{
+      width: 90%;
+      background: #676767;
+      height: 3px;
+      border-radius: 50%;
+      position: relative;
+      justify-content: center;
+      >view{
+        background: #f2f2f2;
+        padding: 0 0.5rem;
+        >image{
+          margin-right: 0.4rem;
+          width: 1.6rem;
+          height: 1.6rem;
+        }
+        >text{
+          font-weight: bold;
+          font-size: 1.02rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+page{
+  width: 100%;
+  min-height: calc(100% - 3rem);
+  font-size: 16px;
+  background: #f2f2f2;
+  margin-bottom: 3rem;
+}
+page > .container{
+  width: 100%;
+}
+view{
+  display: flex;
+  align-items: center;
+}
+
+words-box, user-box{
+  margin-top: 1.5rem;
+  width: 95%;
+}

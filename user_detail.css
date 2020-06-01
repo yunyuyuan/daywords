@@ -1,0 +1,74 @@
+view.container {
+  width: 100%;
+  flex-direction: column; }
+  view.container > .head {
+    width: 96%;
+    margin: 1rem 0 2rem 0;
+    background: white;
+    border-radius: 1rem;
+    padding: 0.6rem 0; }
+    view.container > .head > image {
+      margin: 0 0.4rem;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      flex-shrink: 0; }
+    view.container > .head > .txt {
+      flex-direction: column;
+      margin: 0 auto; }
+      view.container > .head > .txt > .nm {
+        margin-bottom: 0.4rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1; }
+      view.container > .head > .txt > .sign {
+        font-size: 0.75rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; }
+    view.container > .head > .btn {
+      flex-direction: column;
+      margin: 0 0.2rem; }
+      view.container > .head > .btn > button {
+        border-radius: 0.15rem;
+        font-size: 0.8rem;
+        font-weight: normal;
+        width: 2.5rem;
+        padding: 0.15rem 0; }
+        view.container > .head > .btn > button.has {
+          background: #7a7a7a !important; }
+        view.container > .head > .btn > button.sub {
+          background: #6b74ff;
+          color: white;
+          margin-bottom: 0.5rem; }
+        view.container > .head > .btn > button.blk {
+          background: #ff4d4d;
+          color: white; }
+  view.container > .body {
+    flex-direction: column;
+    width: 100%; }
+    view.container > .body > view {
+      width: 90%;
+      background: #676767;
+      height: 3px;
+      border-radius: 50%;
+      position: relative;
+      justify-content: center; }
+      view.container > .body > view > view {
+        background: #f2f2f2;
+        padding: 0 0.5rem; }
+        view.container > .body > view > view > image {
+          margin-right: 0.4rem;
+          width: 1.6rem;
+          height: 1.6rem; }
+        view.container > .body > view > view > text {
+          font-weight: bold;
+          font-size: 1.02rem; }
+
+/*# sourceMappingURL=user_detail.css.map */

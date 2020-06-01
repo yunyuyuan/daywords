@@ -1,0 +1,24 @@
+view.container {
+  flex-direction: column; }
+  view.container > .head {
+    position: relative;
+    width: 100%;
+    margin: 1rem 0; }
+    view.container > .head > text {
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 0 auto; }
+    view.container > .head > button {
+      font-size: 0.85rem;
+      width: 5rem;
+      padding: 0.2rem 0;
+      background: #9049ff;
+      color: white;
+      font-weight: normal;
+      position: absolute;
+      right: 1rem; }
+  view.container > .body {
+    width: 100%;
+    flex-direction: column; }
+
+/*# sourceMappingURL=home.css.map */

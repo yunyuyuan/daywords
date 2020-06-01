@@ -1,0 +1,8 @@
+<view class="-user-box" bindtap="go_detail">
+  <image binderror="default_img" src="{{avatar}}"></image>
+  <text>{{nm}}</text>
+  <view>
+    <image src="/images/heart.png"></image>
+    <text>{{flw_num}}</text>
+  </view>
+</view>

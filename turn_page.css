@@ -1,0 +1,28 @@
+.-turn-page {
+  margin-top: 1rem; }
+  .-turn-page > button {
+    font-size: 0.88rem;
+    font-weight: normal;
+    padding: 0.2rem 0;
+    width: 3rem;
+    border-radius: 0.3rem;
+    background: #0978ff;
+    color: white;
+    margin: 0 0.4rem; }
+    .-turn-page > button.dis {
+      background: #888; }
+  .-turn-page > input {
+    font-size: 0.85rem;
+    width: 3rem;
+    background: white;
+    border-radius: 0.3rem;
+    border: 1px solid gray;
+    text-align: center; }
+  .-turn-page > .mid {
+    width: 1rem;
+    text-align: center;
+    font-weight: bold; }
+  .-turn-page > .cot {
+    font-weight: normal; }
+
+/*# sourceMappingURL=turn_page.css.map */

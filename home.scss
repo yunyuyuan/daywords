@@ -1,0 +1,27 @@
+view.container{
+  flex-direction: column;
+  >.head{
+    position: relative;
+    width: 100%;
+    margin: 1rem 0;
+    >text{
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 0 auto;
+    }
+    >button{
+      font-size: 0.85rem;
+      width: 5rem;
+      padding: 0.2rem 0;
+      background: #9049ff;
+      color: white;
+      font-weight: normal;
+      position: absolute;
+      right: 1rem;
+    }
+  }
+  >.body{
+    width: 100%;
+    flex-direction: column;
+  }
+}

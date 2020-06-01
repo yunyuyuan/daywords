@@ -1,0 +1,45 @@
+view.container {
+  flex-direction: column; }
+  view.container > .search {
+    width: 85%;
+    background: white;
+    border-radius: 0.3rem;
+    border: 1px solid gray;
+    margin: 0.6rem 0; }
+    view.container > .search > input {
+      padding: 0.4rem;
+      background: transparent;
+      width: calc(100% - 3rem);
+      font-size: 0.9rem; }
+    view.container > .search > image {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin: 0 auto; }
+  view.container > .body {
+    width: 100%;
+    flex-direction: column; }
+    view.container > .body > .tog {
+      width: 80%;
+      justify-content: space-around;
+      position: relative; }
+      view.container > .body > .tog > text {
+        width: 40%;
+        font-size: 1.1rem;
+        z-index: 1;
+        text-align: center;
+        padding: 0.5rem 0; }
+      view.container > .body > .tog > view {
+        position: absolute;
+        z-index: 0;
+        background: #84faff;
+        width: 40%;
+        height: 100%;
+        border-radius: 0.6rem;
+        left: 5%; }
+    view.container > .body > .content {
+      width: 100%; }
+      view.container > .body > .content > .items {
+        width: 100%;
+        flex-direction: column; }
+
+/*# sourceMappingURL=ground.css.map */

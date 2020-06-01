@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="search">
+    <input bindinput="input_" bindconfirm="click_sc" placeholder="搜索句子/用户,留空搜索全部,16字内" maxlength="16"></input>
+    <image bindtap="click_sc" src="/images/search.png"></image>
+  </view>
+  <view class="body">
+    <view class="tog">
+      <text data-s='words' bindtap="change_at">句子</text>
+      <text data-s='act' bindtap="change_at">用户</text>
+      <view class="mask" animation="{{animate_at}}"></view>
+    </view>
+    <view wx:if="{{lis.length>0}}" class="content">
+      <view class="items" wx:if="{{at=='words'}}">
+        <words-box wx:for="{{lis}}" wx:key="id" content="{{item.title}}" p_num="{{item.prs_num}}" openid="{{item.openid}}" wordsid="{{item.id}}" color="{{item.color}}" time="{{item.crt_time}}"></words-box>
+      </view>
+      <view class="items" wx:else>
+        <user-box wx:for="{{lis}}" wx:key="_id" flw_num="{{item.flws}}" nm="{{item.nm}}" openid="{{item.openid}}"></user-box>
+      </view>
+    </view>
+    <turn-page wx:if="{{lis.length>0}}" id="id-turn-page" bind:goturn="turn_page" show_count="{{show_count}}" num="{{num}}" now="{{now}}"></turn-page>
+    <empty wx:else></empty>
+  </view>
+</view>

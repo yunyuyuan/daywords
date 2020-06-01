@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/ground/ground",
+    "pages/i/i",
+    "components/turn_page/turn_page",
+    "components/words_box/words_box",
+    "components/user_box/user_box",
+    "components/empty/empty",
+    "pages/user_detail/user_detail",
+    "pages/words_detail/words_detail",
+    "pages/i/block/block",
+    "pages/i/fav/fav",
+    "pages/i/sub/sub",
+    "pages/i/edit_info/edit_info"
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#eee",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_s.png",
+        "text": "今日"
+      },
+      {
+        "pagePath": "pages/ground/ground",
+        "iconPath": "images/sub.png",
+        "selectedIconPath": "images/sub_s.png",
+        "text": "众说"
+      },
+      {
+        "pagePath": "pages/i/i",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my_s.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#f2f2f2",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "每日一句",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,7 @@
+<view class="-turn-page">
+  <button class="{{now>1?'':'dis'}}" bindtap="go_pre">上页</button>
+  <input bindconfirm="do_turn" value="{{now}}" type="number"></input>
+  <text class="mid">/</text>
+  <text class="cot">{{page_num}}</text>
+  <button class="{{now<page_num?'':'dis'}}" bindtap="go_next">下页</button>
+</view>

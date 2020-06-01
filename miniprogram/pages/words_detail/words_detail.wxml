@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="head">
+    <image class="a" src="{{avatar}}" binderror="default_img" bindtap="go_user"></image>
+    <text class="nm">{{nm}}</text>
+    <image class="t" src="/images/time.png"></image>
+    <text class="time">{{crt_time}}</text>
+  </view>
+  <text class="title" style="background:{{color}}">{{title}}</text>
+  <view class="desc">
+    <text class="h">详情</text>
+    <text class="t">{{cont}}</text>
+  </view>
+  <view class="prs {{has_prs==1?'has':''}}" bindtap="do_prs">
+    <image src="/images/prise.png"></image>
+    <text>({{prs_num}})</text>
+  </view>
+</view>

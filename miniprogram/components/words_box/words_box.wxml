@@ -1,0 +1,16 @@
+<view class="-words">
+  <image wx:if="{{show_a}}" bindtap="go_user" binderror="default_img" data-id="{{openid}}" src="{{avatar}}"></image>
+  <view bindtap="go_words" data-id="{{wordsid}}" style="background:{{color_lis[color]}}">
+    <text>{{content}}</text>
+    <view>
+      <view class="top">
+        <image src="/images/prise.png"></image>
+        <text>{{p_num}}</text>
+      </view>
+      <view wx:if="{{time!=''}}">
+        <image src="/images/time.png"></image>
+        <text class="t">{{time}}</text>
+      </view>
+    </view>
+  </view>
+</view>
